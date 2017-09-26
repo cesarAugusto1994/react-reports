@@ -15,25 +15,22 @@ export default class Tabelas extends Component {
 
   constructor() {
     super()
-    this.state = {
-      tabelas: []
-    }
+    this.state = { tabelas: [] }
   }
 
   componentDidMount() {
     let self = this;
-      $.ajax({
-        url: 'http://172.20.1.54:8050/api/tabelas',
-        dataType: "json",
-        type: 'GET',
-        success: function (result) {
-          self.setState({ tabelas: result })
-          //localStorage.setItem('tabelas', result);
-        },
-        error: function (result) {
-          console.log("error");
-        }
-      })
+    $.ajax({
+      url: 'http://172.20.1.54:8050/api/tables',
+      dataType: "json",
+      type: 'GET',
+      success: function (result) {
+        self.setState({ tabelas: result })
+      },
+      error: function (result) {
+        console.log("error");
+      }
+    })
   }
 
   render() {
@@ -47,19 +44,21 @@ export default class Tabelas extends Component {
           Tabelas
         </h1>
         <div>
+
           <Table striped bordered condensed hover>
             <thead>
               <tr>
+                <th>ID</th>
                 <th>Nome</th>
-                <th>Opc</th>
               </tr>
             </thead>
             <tbody>
               {
                 this.state.tabelas.map(function (tabela) {
                   return <tr key={tabela.id}>
+                    <td>{tabela.id}</td>
                     <td>{tabela.nome}</td>
-                    <td></td>
+                    <td>{tabela.schema}</td>
                   </tr>;
                 })
               }
