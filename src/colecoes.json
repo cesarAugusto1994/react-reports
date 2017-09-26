@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nome": "Avulsos",
+        "imagem": "3659ab03897f99adb7e9709f983b719e..jpg",
+        "qtde_categorias": 21,
+        "ativo": 1
+    },
+    {
+        "id": 2,
+        "nome": "Colet\u00e2nea ",
+        "imagem": "2f5b27e3151761af47ec261e2fe1eadf..jpg",
+        "qtde_categorias": 13,
+        "ativo": 1
+    },
+    {
+        "id": 4,
+        "nome": "Crian\u00e7as",
+        "imagem": "93d62d28b0d6780c5db43f7a24015a37..jpg",
+        "qtde_categorias": 2,
+        "ativo": 1
+    },
+    {
+        "id": 5,
+        "nome": "Instrumentais",
+        "imagem": "8cc21987760eaf6d14aeb7731f942c61..jpg",
+        "qtde_categorias": 1,
+        "ativo": 1
+    },
+    {
+        "id": 3,
+        "nome": "Materiais",
+        "imagem": "82b4f0d56ef2af1ad6ba9c68884a9b2c..jpg",
+        "qtde_categorias": 4,
+        "ativo": 1
+    },
+    {
+        "id": 8,
+        "nome": "Mensagens",
+        "imagem": "11267863137826722d9eb280ba8fe598..jpg",
+        "qtde_categorias": 1,
+        "ativo": 1
+    },
+    {
+        "id": 7,
+        "nome": "Partituras",
+        "imagem": "e2f8cce760736ae32cc6e3e2883c0d59..jpg",
+        "qtde_categorias": 1,
+        "ativo": 1
+    },
+    {
+        "id": 6,
+        "nome": "Proje\u00e7\u00e3o",
+        "imagem": "0a4aefad53d9d0f83033321b2dae8926..jpg",
+        "qtde_categorias": 1,
+        "ativo": 1
+    }
+]
