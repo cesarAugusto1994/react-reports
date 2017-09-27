@@ -10,9 +10,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
 class Menu extends Component {
-  // static propTypes = {}
-  // static defaultProps = {}
-  // state = {}
 
   render() {
     const { className, ...props } = this.props;
@@ -24,7 +21,7 @@ class Menu extends Component {
           <Grid>
             <Navbar.Header>
               <Navbar.Brand>
-                <a href="/">Relatorios App</a>
+                <a href="/">Relat&oacute;rios</a>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>

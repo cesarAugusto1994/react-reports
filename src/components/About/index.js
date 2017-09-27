@@ -1,25 +1,27 @@
 // src/components/About/index.js
 import React, { PropTypes, Component } from 'react';
-import Menu from '../View/Menu/index.js';
+import App from '../App/index.js';
 import classnames from 'classnames';
+
+import { Table, Grid, Panel, Button } from 'react-bootstrap';
 
 import './style.css';
 
 export default class About extends Component {
-  // static propTypes = {}
-  // static defaultProps = {}
-  // state = {}
 
   render() {
     const { className, ...props } = this.props;
     return (
       <div className={classnames('About', className)} {...props}>
-
-        <Menu/>
-
-        <h1>
-          About <a href="/">Link</a>
-        </h1>
+        <App>
+          <Grid>
+            <Panel header={'About'}>
+              <h1>
+                ...
+            </h1>
+            </Panel>
+          </Grid>
+        </App>
       </div>
     );
   }
