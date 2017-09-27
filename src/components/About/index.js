@@ -1,6 +1,6 @@
 // src/components/About/index.js
 import React, { PropTypes, Component } from 'react';
-import Menu from '../Menu/index.js';
+import Menu from '../View/Menu/index.js';
 import classnames from 'classnames';
 
 import './style.css';

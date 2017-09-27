@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 import { Grid, Navbar, Nav, NavItem, Jumbotron, Button } from 'react-bootstrap';
 
-import logo from '../App/logo.svg';
+import logo from '../../App/logo.svg';
 import './style.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -36,7 +36,6 @@ class Menu extends Component {
               </Nav>
               <Nav pullRight>
                 <NavItem eventKey={1} href="/about">About</NavItem>
-                <NavItem eventKey={2} href="#">Link Right</NavItem>
               </Nav>
             </Navbar.Collapse>
 
