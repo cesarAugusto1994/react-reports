@@ -13,9 +13,7 @@ class Home extends Component {
       <App>
         <Grid>
           <Panel header={'Home'}>
-            <h1>
-              ...
-            </h1>
+            <Services url="http://172.20.1.54:8050/api/relatorios"/>
           </Panel>
         </Grid>
       </App>
