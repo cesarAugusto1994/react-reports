@@ -12,16 +12,18 @@ import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 class Services extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       data: [],
       header: [],
-      counter: 0
+      counter: 0,
+      url: props.url
     }
+
     this.props = {
       cols: ['Nome'],
-      target: ''
+      target: '',
     }
   }
 
@@ -30,7 +32,7 @@ class Services extends Component {
     let self = this;
 
     $.ajax({
-      url: self.props.url,
+      url: self.state.url,
       dataType: "json",
       type: 'GET',
       success: function (result) {
@@ -48,11 +50,11 @@ class Services extends Component {
   }
 
   render() {
-    const { className, ...props } = this.props;
+    const { className, url, ...props } = this.props;
     let self = this;
 
     const selectRow = {
-      mode: 'checkbox',  // multi select
+      mode: 'checkbox', 
       clickToSelect: true
     };
 
@@ -61,7 +63,7 @@ class Services extends Component {
       onRowClick: this.onRowClick
     };
 
-    return (
+    return (  
       <div className={classnames('Services', className)} {...props}>
 
         <BootstrapTable

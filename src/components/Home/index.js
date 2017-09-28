@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import App from '../App/index.js';
 import Services from '../../services/index.js';
 import classnames from 'classnames';
-import { Table, Grid, Panel, Button } from 'react-bootstrap';
+import { Grid, Panel } from 'react-bootstrap';
 
 class Home extends Component {
 
