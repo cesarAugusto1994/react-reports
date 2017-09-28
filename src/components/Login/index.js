@@ -29,7 +29,22 @@ export default class Login extends Component {
   }
 
   handleSubmit = event => {
-    event.preventDefault();
+    
+    let usuario = window.sessionStorage.getItem("usuario")
+    let email = window.sessionStorage.getItem("email")
+    let password = window.sessionStorage.getItem("password")
+
+
+    console.log(this.state.email);
+
+    if (this.state.email == email && this.state.password == password) {
+      window.location.href = '/';
+      event.preventDefault();      
+      return false;
+    }
+
+    alert('Usuario ou Senha estão errados.');
+
   }
 
   handleClickRegistro = event => {
@@ -69,7 +84,7 @@ export default class Login extends Component {
             block
             bsStyle="danger"
             bsSize="large"
-            type="submit"
+            type="button"
             onClick={this.handleClickRegistro}
           >
             Registrar

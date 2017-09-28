@@ -34,6 +34,7 @@ export default class Registro extends Component {
 
     window.sessionStorage.setItem("usuario", this.state.nome)
     window.sessionStorage.setItem("email", this.state.email)
+    window.sessionStorage.setItem("password", this.state.password)
     
     window.location.href = '/';
 

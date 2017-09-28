@@ -54,7 +54,7 @@ class Menu extends Component {
               </Nav>
               <Nav pullRight>
                 <NavDropdown eventKey={1} title={this.state.usuario} id="basic-nav-dropdown">
-                  <MenuItem eventKey={1.1}>Sobre</MenuItem>
+                  <MenuItem eventKey={1.1} href="/login">Login</MenuItem>
                   <MenuItem divider />
                   <MenuItem eventKey={1.2} onClick={this.handleSessionDestroy}>Sair</MenuItem>
                 </NavDropdown>
