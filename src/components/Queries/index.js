@@ -14,13 +14,15 @@ export default class Queries extends Component {
   render() {
     const { className, ...props } = this.props;
     return (
-      <App>
-        <Grid>
-          <Panel header={'Queries'}>
-            <Services url="http://172.20.1.54:8050/api/queries" target="/tabela/" />
-          </Panel>
-        </Grid>
-      </App>
+      <div className={classnames('Queries', className)} {...props}>
+        <App>
+          <Grid>
+            <Panel header={'Queries'}>
+              <Services url="http://172.20.1.54:8050/api/queries" target="/tabela/" />
+            </Panel>
+          </Grid>
+        </App>
+      </div>
     );
   }
 }

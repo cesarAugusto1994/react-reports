@@ -10,13 +10,15 @@ class Home extends Component {
     const { className, ...props } = this.props;
 
     return (
-      <App>
-        <Grid>
-          <Panel header={'Home'}>
-            <Services url="http://172.20.1.54:8050/api/relatorios"/>
-          </Panel>
-        </Grid>
-      </App>
+      <div className={classnames('Home', className)} {...props}>
+        <App>
+          <Grid>
+            <Panel header={'Home'}>
+              <Services url="http://172.20.1.54:8050/api/relatorios" />
+            </Panel>
+          </Grid>
+        </App>
+      </div>
     );
   }
 }
