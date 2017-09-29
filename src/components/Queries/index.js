@@ -18,7 +18,7 @@ export default class Queries extends Component {
         <App>
           <Grid>
             <Panel header={'Queries'}>
-              <Services url="http://172.20.1.54:8050/api/queries" target="/tabela/" />
+              <Services url="http://172.20.1.54:8050/api/query" target="/tabela/" />
             </Panel>
           </Grid>
         </App>

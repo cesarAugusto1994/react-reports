@@ -12,18 +12,19 @@ import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 class Services extends Component {
 
+
   constructor(props) {
     super(props)
     this.state = {
       data: [],
       header: [],
       counter: 0,
-      url: props.url
+      url: props.url,
+      target: props.target
     }
 
     this.props = {
       cols: ['Nome'],
-      target: '',
     }
   }
 
@@ -37,7 +38,7 @@ class Services extends Component {
       type: 'GET',
       success: function (result) {
         self.setState({ data: result })
-        self.setState({ counter: result[0] })
+        self.setState({ counter: result[0].lenght })
       },
       error: function (result) {
         console.log("error");
@@ -46,7 +47,7 @@ class Services extends Component {
   }
 
   onRowClick(row) {
-    window.location.href = '/tabelas/' + row.nome
+    window.location.href = '/tabela/' + row.nome
   }
 
   render() {
